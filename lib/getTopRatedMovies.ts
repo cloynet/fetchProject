@@ -12,7 +12,7 @@ export async function getTopRatedMovies() {
 
   if (!res.ok) {
     const errorText = await res.text();
-    throw new Error(`En çok oy alan filmler getirilemedi: ${errorText}`);
+    throw new Error(`Failed to fetch top-rated movies: ${errorText}`);
   }
 
   const data = await res.json();
