@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Movie DB
 
-## Getting Started
+A web app for fetching and displaying movies from TMDB API.
 
-First, run the development server:
+Features
 
-```bash
+Fetches movie data from TMDB API
+
+Displays popular and top-rated movies
+
+Filter movies by category
+
+Built with React + Next.js + TailwindCSS
+
+Technologies
+
+Next.js 15
+
+React 18
+
+TailwindCSS
+
+TypeScript
+
+TMDB API
+
+Setup
+git clone https://github.com/cloynet/moviedb-fetch.git
+cd moviedb-fetch
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+/ → Homepage with popular and top-rated movies
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+/category/:id → Movies filtered by selected category
 
-## Learn More
+Demo
 
-To learn more about Next.js, take a look at the following resources:
+[Live Demo](https://fetch-project-six.vercel.app/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+API
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+TMDB API (https://developer.themoviedb.org/docs/getting-started)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Movie DB (TR)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Film API’si ile veri çekme ve listeleme uygulaması.
+
+Özellikler
+
+TMDB API üzerinden film verilerini fetch eder
+
+Popüler ve en çok oy alan filmleri listeler
+
+Kategori bazlı film filtreleme
+
+React + Next.js + TailwindCSS kullanılmıştır
+
+Teknolojiler
+
+Next.js 15
+
+React 18
+
+TailwindCSS
+
+TypeScript
+
+TMDB API
+
+Kurulum
+git clone https://github.com/cloynet/moviedb-fetch.git
+cd moviedb-fetch
+npm install
+npm run dev
+
+Kullanım
+
+/ → Ana sayfa, popüler ve en çok oy alan filmler
+
+/category/:id → Seçilen kategoriye göre film listesi
+
+Demo
+
+[Live Demo](https://fetch-project-six.vercel.app/)
+
+API
+
+TMDB API (https://developer.themoviedb.org/docs/getting-started)
