@@ -16,10 +16,16 @@ interface CategoryPageProps {
 }
 
 async function getCategoryMovies(categoryId: string) {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
-  const res = await fetch(`${baseUrl}/api/category/${categoryId}`, {
-    next: { revalidate: 60 },
-  });
+  const res = await fetch(
+    `https://api.themoviedb.org/3/discover/movie?with_genres=${categoryId}&language=en-US&page=1`,
+    {
+      headers: {
+        Authorization: `Bearer ${process.env.TMDB_BEARER_TOKEN3}`,
+        Accept: "application/json",
+      },
+      next: { revalidate: 60 },
+    }
+  );
 
   if (!res.ok) {
     console.error("Failed to fetch category movies:", res.status);
