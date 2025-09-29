@@ -16,11 +16,13 @@ interface CategoryPageProps {
 }
 
 async function getCategoryMovies(categoryId: string) {
-  const res = await fetch(`http://localhost:3000/api/category/${categoryId}`, {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+  const res = await fetch(`${baseUrl}/api/category/${categoryId}`, {
     next: { revalidate: 60 },
   });
 
   if (!res.ok) {
+    console.error("Failed to fetch category movies:", res.status);
     throw new Error("Movies could not be fetched.");
   }
 
