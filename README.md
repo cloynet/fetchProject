@@ -66,6 +66,8 @@ Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyi
     # veya / or
     yarn dev
     ```
+    Tarayıcınızda görüntülemek için http://localhost:3000 adresini açın. / Open http://localhost:3000 to view it in your browser.
+
 ---
 
 ## 🗺️ Usage / Kullanım
