@@ -66,9 +66,6 @@ Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyi
     # veya / or
     yarn dev
     ```
-
-Uygulamanız artık **http://localhost:3000** adresinde çalışıyor olmalıdır. / Your application should now be running at **http://localhost:3000**.
-
 ---
 
 ## 🗺️ Usage / Kullanım
