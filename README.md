@@ -1,6 +1,12 @@
 # 🎬 Movie DB
 
-**A web app for fetching and displaying movies from TMDB API / Film API’si ile veri çekme ve listeleme uygulaması.**
+**TMDB API ile veri çekme ve listeleme uygulaması.** Proje, popüler ve en çok oy alan filmleri görüntülemektedir.
+
+**A web app for fetching and displaying movies from TMDB API.** The project showcases popular and top-rated movies.
+
+---
+
+## 🚀 Quick Links / Hızlı Bağlantılar
 
 [![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
@@ -11,33 +17,71 @@
 
 ---
 
-## Features / Özellikler
-- Fetches movie data from TMDB API / TMDB API üzerinden film verilerini fetch eder
-- Displays popular and top-rated movies / Popüler ve en çok oy alan filmleri listeler
-- Filter movies by category / Kategori bazlı film filtreleme
-- Built with React + Next.js + TailwindCSS / React + Next.js + TailwindCSS kullanılmıştır
+## ✨ Features / Özellikler
 
-## Technologies / Teknolojiler
-- Next.js 15
-- React 18
-- TailwindCSS
-- TypeScript
-- TMDB API
+| Icon | Feature (EN) | Özellik (TR) |
+| :---: | :--- | :--- |
+| 📡 | **API Data Fetching** | TMDB API üzerinden film verilerini **fetch** etme. |
+| 🍿 | **Movie Listings** | Popüler ve en çok oy alan filmleri listeleme. |
+| 🏷️ | **Category Filtering** | Kategori bazlı film **filtreleme**. |
+| 🛠️ | **Modern Stack** | React + Next.js + TailwindCSS ile oluşturulmuştur. |
 
-## Setup / Kurulum
-```bash
-git clone https://github.com/cloynet/moviedb-fetch.git
-cd moviedb-fetch
-npm install
-npm run dev
-```
-## Usage / Kullanım
-- / → Homepage with popular and top-rated movies / Ana sayfa, popüler ve en çok oy alan filmler
-- /category/:id → Movies filtered by selected category / Seçilen kategoriye göre film listesi
- 
-Demo(https://fetch-project-six.vercel.app/)
+---
 
-API(https://developer.themoviedb.org/docs/getting-started)
+## 🛠️ Technologies / Teknolojiler
 
+Bu proje, modern ve tip güvenli bir deneyim sunmak için aşağıdaki araçlarla inşa edilmiştir:
 
+This project is built with the following tools to deliver a modern and type-safe experience:
 
+| Icon | Technology / Teknoloji | Role / Görev (TR) | Role / Görev (EN) |
+| :---: | :--- | :--- | :--- |
+| ⚛️ | **Next.js 15 & React 18** | Uygulamanın temel iskeleti ve arayüz yapısı. | The core framework for building the application structure and UI. |
+| 💨 | **TailwindCSS** | Hızlı ve responsive tasarım için utility-first CSS. | A utility-first CSS framework for fast and responsive design. |
+| 📜 | **TypeScript** | Daha güvenli ve ölçeklenebilir kod yazımı için tip kontrolü. | Type checking for safer and more scalable code development. |
+| 🎬 | **TMDB API** | Film verilerinin (isim, poster, puan vb.) alındığı harici kaynak. | The external source for fetching movie data (titles, posters, ratings, etc.). |
+
+---
+
+## ⚡ Setup / Kurulum
+
+Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyin:
+
+1.  **Depoyu Klonlayın / Clone the repository:**
+    ```bash
+    git clone [https://github.com/cloynet/moviedb-fetch.git](https://github.com/cloynet/moviedb-fetch.git)
+    cd moviedb-fetch
+    ```
+
+2.  **Bağımlılıkları Yükleyin / Install dependencies:**
+    ```bash
+    npm install
+    # veya / or
+    yarn install
+    ```
+
+3.  **Geliştirme Sunucusunu Başlatma / Start the Development Server:**
+    ```bash
+    npm run dev
+    # veya / or
+    yarn dev
+    ```
+
+Uygulamanız artık **http://localhost:3000** adresinde çalışıyor olmalıdır. / Your application should now be running at **http://localhost:3000**.
+
+---
+
+## 🗺️ Usage / Kullanım
+
+| Rota / Route | Açıklama / Description |
+| :--- | :--- |
+| `/` | **Ana Sayfa**; popüler ve en çok oy alan filmlerin listesi. / **Homepage**; listing popular and top-rated movies. |
+| `/category/:id` | Seçilen kategori ID'sine göre **filtrelenmiş** film listesi. / Movies **filtered** by the selected category ID. |
+
+---
+
+## 🔗 Live Demo & Repository
+
+* **Canlı Demo / Live Demo:** [https://fetch-project-six.vercel.app/](https://fetch-project-six.vercel.app/)
+* **GitHub Deposu / GitHub Repository:** [https://github.com/cloynet/fetchProject/tree/main](https://github.com/cloynet/fetchProject/tree/main)
+* **TMDB API Belgeleri / TMDB API Docs:** [https://developer.themoviedb.org/docs/getting-started](https://developer.themoviedb.org/docs/getting-started)
